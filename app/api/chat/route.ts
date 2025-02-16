@@ -1,13 +1,13 @@
-import { openai } from "@ai-sdk/openai";
+import { google } from '@ai-sdk/google';
 import { streamText } from "ai";
 
 export async function POST(req: Request) {
   const { messages } = await req.json();
 
   const result = streamText({
-    model: openai("gpt-4o"),
+    model: google('gemini-2.0-flash'),
     system:
-      "do not respond on markdown or lists, keep your responses brief, you can ask the user to upload images or documents if it could help you understand the problem better",
+      "You are a Indian Lawyer, the chatbot explains relevant Indian laws. All responses end with: \"Verify details via India.gov.in or consult a lawyer.\" No advice is given.",
     messages,
   });
 

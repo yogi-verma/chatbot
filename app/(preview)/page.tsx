@@ -224,27 +224,10 @@ export default function Home() {
           <motion.div className="h-[350px] px-4 w-full md:w-[500px] md:px-0 pt-20">
             <div className="border rounded-lg p-6 flex flex-col gap-4 text-zinc-500 text-sm dark:text-zinc-400 dark:border-zinc-700">
               <p className="flex flex-row justify-center gap-4 items-center text-zinc-900 dark:text-zinc-50">
-                <VercelIcon />
-                <span>+</span>
-                <AttachmentIcon />
+                Code Legalist
               </p>
               <p>
-                The useChat hook supports sending attachments along with
-                messages as well as rendering previews on the client. This can
-                be useful for building applications that involve sending images,
-                files, and other media content to the AI provider.
-              </p>
-              <p>
-                {" "}
-                Learn more about the{" "}
-                <Link
-                  className="text-blue-500 dark:text-blue-400"
-                  href="https://sdk.vercel.ai/docs/ai-sdk-ui/chatbot#attachments-experimental"
-                  target="_blank"
-                >
-                  useChat{" "}
-                </Link>
-                hook from Vercel AI SDK.
+                Your assistant for Indian laws. Ask about rights, statutes, or cases. Note: This is general info, not legal advice. Verify details or consult a lawyer.
               </p>
             </div>
           </motion.div>
